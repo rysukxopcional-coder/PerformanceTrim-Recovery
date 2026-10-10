@@ -8,9 +8,3 @@ Aplicativo profissional, nativo e portátil para Windows, escrito em C++17, foca
 - **Elevação UAC Automática:** Verificação e solicitação rigorosa de privilégios administrativos (`runas`) na inicialização.
 - **Ferramentas de Diagnóstico e Reparo:** Execução controlada de utilitários nativos de integridade do Windows (`sfc /scannow`).
 - **Portabilidade Absoluta:** Sem dependências de runtimes externos (.NET, Python ou bibliotecas pesadas), operando diretamente de pastas locais ou unidades USB.
-
-## 🛠️ Compilação via MinGW-w64 (GCC)
-Para compilar o executável de 64 bits (`PerformanceTrim_x64.exe`) diretamente pelo Prompt de Comando ou PowerShell:
-
-```cmd
-g++ -std=c++17 -O2 -DNDEBUG -mwindows main.cpp -o PerformanceTrim_x64.exe -lcomctl32 -lshell32 -ladvapi32 -lole32 -lpthread
